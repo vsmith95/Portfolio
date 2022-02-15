@@ -1,171 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaughn's Portfolio</title>
-    <link rel="stylesheet" href="./assests/css/style.css" />
-</head>
-<body>
-    <!-- Nav and Header -->
-    <header>
-        <h1>
-            <a href="/">Vaughn's Portfolio</a>
-        </h1>
-        <nav>
-            <!-- Nav Links -->
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-work">My Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vaughn's Portfolio</title>
+        <link rel="stylesheet" href="./assests/css/style.css" />
+    </head>
+    <body>
+        <!-- Nav and Header -->
+        <header>
+            <h1>
+                <a href="/">Vaughn's Portfolio</a>
+            </h1>
+            <nav>
+                <!-- Nav Links -->
+                <ul>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#my-work">My Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact me</a>
+                    </li>
+                    <li>
+                        <a href="#resume">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Hero -->
-    <section class="hero">
+        <!-- Hero -->
+        <section class="hero">
 
-        <div class="subtitle">
-            <h2>
-                Professional in Progress
-            </h2>
-        </div>
-        <!-- Add Hero Content Here -->
-    </section>
+            <div class="subtitle">
+                <h2>
+                    Professional in Progress
+                </h2>
+            </div>
+            <!-- Add Hero Content Here -->
+        </section>
 
-    <!-- About Me -->
-    <section id="#about-me">
+        <!-- About Me -->
         <div class="sidebar">
             <div>
                 <h2 class="section-title">
                     About Me
                 </h2>
             </div>
-            <div class="bio">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis magni minima praesentium quas non numquam, doloremque blanditiis ullam cum esse libero nulla! Dolores neque repellat quibusdam, iste dolor quae?
-                </p>
+        <section id="#about-me">
+                <div class="bio">
+                    <img src="./assests/images/bio-pic.jpg" alt="Bio picture of Vaughn" />
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis magni minima praesentium quas non numquam, doloremque blanditiis ullam cum esse libero nulla! Dolores neque repellat quibusdam, iste dolor quae?
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Work Section -->
-    <section id="#my-work">
+        <!-- Work Section -->
         <div class="sidebar">
             <h2 class="section-title">
                 My Work
             </h2>
         </div>
-        <!-- Make 5 Content Cards that link to other projects -->
-        <!-- Card 1 should be the main focus, make it larger and above the rest -->
-        <div class="cards">
-            <!-- Card 1 -->
-            <div class="work-card main-card">
-                <img src="./assests/images/surf report.jpg" alt="" />
-                <div class="card-title-box">
-                    <h3>
-                        Surf Report
-                    </h3>
-                    <p>
-                        MERN Stack
-                    </p>
+        <section id="#my-work" class="my-work">
+            <!-- Make 5 Content Cards that link to other projects -->
+            <!-- Card 1 should be the main focus, make it larger and above the rest -->
+                <!-- Card 1 -->
+                <div class="main-card">
+                    <img src="./assests/images/surf-report.jpg" alt="" />
+                    <div class="card-title-box">
+                        <h3>
+                            Surf Report
+                        </h3>
+                        <p>
+                            MERN Stack
+                        </p>
+                    </div>
                 </div>
+            <div class="cards">
+                <!-- Next 4 cards should share a uniform size with eachother,  -->
+                <!-- Card 2 -->
+                <div class="work-card">
+                    <img src="./assests/images/LED-display.jpg" alt="" />
+                    <div class="card-title-box">
+                        <h3>
+                            LED Wall
+                        </h3>
+                        <p>
+                            Node/IoT
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="work-card">
+                    <img src="./assests/images/calculator.jpg" alt="" />
+                    <div class="card-title-box">
+                        <h3>
+                            Calculator
+                        </h3>
+                        <p>
+                            React/JavaScript/CSS
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="work-card">
+                    <img src="./assests/images/pastel-puzzle.png" alt="" />
+                    <div class="card-title-box">
+                        <h3>
+                            Pastel Puzzles
+                        </h3>
+                        <p>
+                            MERN Stack
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="work-card">
+                    <img src="./assests/images/run-buddy.JPG" alt="" />
+                    <div class="card-title-box">
+                        <h3>
+                            Run Buddy
+                        </h3>
+                        <p>
+                            HTML/CSS
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <!-- Contact Me Section -->
+        <footer id="#contact-me">
+            <div class="sidebar">
+                <h2 class="section-title">
+                    Contact Me
+                </h2>
+            </div>
+            <div class="contact-info">
+                <a href="tel:8602443569">(860)244-3569</a>
+                <a href="mailto:vaughnsmith95@gmail.com">vaughnsmith95@gmail.com</a>
+                <a href="https://github.com/vsmith95">GitHub</a>
             </div>
 
-            <!-- Next 4 cards should share a uniform size with eachother,  -->
-            <!-- Card 2 -->
-            <div class="work-card">
-                <img src="./assests/images/LED-display.jpg" alt="" />
-                <div class="card-title-box">
-                    <h3>
-                        LED Wall
-                    </h3>
-                    <p>
-                        Node/IoT
-                    </p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="work-card">
-                <img src="./assests/images/calculator.jpg" alt="" />
-                <div class="card-title-box">
-                    <h3>
-                        Calculator
-                    </h3>
-                    <p>
-                        React/JavaScript/CSS
-                    </p>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="work-card">
-                <img src="./assests/images/pastel-puzzle.png" alt="" />
-                <div class="card-title-box">
-                    <h3>
-                        Pastel Puzzles
-                    </h3>
-                    <p>
-                        MERN Stack
-                    </p>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="work-card">
-                <img src="./assests/images/run-buddy.JPG" alt="" />
-                <div class="card-title-box">
-                    <h3>
-                        Run Buddy
-                    </h3>
-                    <p>
-                        HTML/CSS
-                    </p>
-                </div>
-            </div>
-        </div>    
-    </section>
-
-    <!-- Contact Me Section -->
-    <section id="#contact-me">
-        <div class="sidebar">
-            <h2 class="section-title">
-                Contact Me
-            </h2>
-        </div>
-        <div class="contact-info">
-            <ul>
-                <li>
-                    <a href="tel:8602443569">(860)244-3569</a>
-                </li>
-                <li>
-                    <a href="mailto:vaughnsmith95@gmail.com">vaughnsmith95@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://github.com/vsmith95">GitHub</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <h3>
-            Made with Love by Vaughn Smith 
-        </h3>
-        <h3>
-            <a href="/">Return to Top</a>
-        </h3>
-    </footer>
-
-    
-</body>
+        </footer>
+    </body>
 </html>

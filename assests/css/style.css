@@ -25,6 +25,7 @@ header {
     justify-content: space-between;
     background-color: var(---tertiary-color);
     padding: 20px 35px;
+    border: 3px solid var(---primary-color);
 
 }
 
@@ -45,10 +46,6 @@ header nav {
     margin: 7px 0;
 }
 
-header li {
-    border-bottom: 5px solid var(---primary-color);
-}
-
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -57,11 +54,21 @@ header nav ul {
     list-style: none;
 }
 
+header li a {
+    padding: auto 5px;
+    border-bottom: 5px solid var(---primary-color);
+    border-right: 5px solid var(---primary-color);
+}
+
 header nav ul li a {
     padding: 10px 35px;
     font-weight: bold;
-    font-size: 1.5w;
+    font-size: 1.5;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    color: var(---secondary-color);
 }
 
 section{
@@ -100,57 +107,138 @@ section{
     display: flex;
     flex-wrap: wrap;
     flex: 1 30%;
-    border-right: 3px solid var(---primary-color);
+    padding: 15px 10px 15px 25px;
 }
 
 .sidebar .section-title {
     font-size: 40px;
     font-weight: bold;
-    
+    border-right: 3px solid var(---primary-color);
+    border-bottom:3px solid var(---primary-color);;
+    padding: 10px;
 }
 
 /* About Me Section */
 .bio {
-
+    display: flex;
+    flex-direction: column;
+    margin: 1.5;
 }
 
 .bio p {
+    flex: 1 50%;
     line-height: 1.7;
     color: var(---primary-color);
     width: 70%;
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
+    padding: 15px 20px 15px 20px;
 }
 
-/* My Work section */
+.bio img {
+    flex: 0 5%;
+    width: 100%;
+    max-height: 600px;
+    max-width: min-content;
+    border: 5px solid var(---primary-color);
+    align-self: center;
+    margin: 1.5;
+}
+/* My Work Section */
 
+.my-work {
+    display: flex;
+    flex-flow: wrap column;
+    /* padding: 10px; */
+    margin: 1.5;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1.5;
+    border: 3px solid var(---secondary-color);
+    flex: 2 40%;
+    margin: 1.5;
+    
+}
+
+.main-card img {
+    height: 500px;
+    width: 1400px;
+    min-width: 400px;
+    position: relative;
+}
 .cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
+    flex-flow: wrap row-reverse;
+    justify-content: center;
+    width: 1.5;
 }
 
 .work-card {
-    margin: 20px;
+    display: flex;
+    flex-flow: column-reverse;
+    margin: 10px 10px;
     border: 3px solid var(---secondary-color);
     color: var(---primary-color);
-    flex: 1 30%;
+    flex: 0 40%;
 }
 
 .work-card img {
+    height: 200px;
     width: 100%;
-    border-radius: 10px 10px 0 0;
     min-width: 400px;
-    max-width: 100px;
+    position: relative;
 }
 
 .card-title-box {
     background-color: var(---tertiary-color);
-    padding: 20px;
+    padding: 10px;
     line-height: 1.2;
-    justify-content: left;
+    align-self: baseline;
+    margin: 1.5;
+    width: 1.5;
+    z-index: 999;
+    position: absolute;
+    border-radius: 15px;
+    border: 3px solid var(---primary-color);
+}
+
+.card-title-box:hover {
+    background-color: var(---primary-color);
+    color: var(---tertiary-color);
+    border: 3px solid var(---tertiary-color);
+}
+
+/* Footer Section */
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(---tertiary-color);
+}
+
+.contact-info a {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid var(---primary-color);
+}
+
+.contact-info a:hover {
+    color: var(---secondary-color)
+}
+
+footer {
+    flex-wrap: wrap;
+    background-color: var(---tertiary-color);
+    font-size: 1.5;
 }
