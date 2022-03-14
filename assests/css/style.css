@@ -205,11 +205,12 @@ section{
 .work-card {
     display: flex;
     flex-flow: column-reverse;
-    margin: auto;
+    margin: 10px;
     border: 5px solid var(---primary-color);
     color: var(---primary-color);
     flex: 0 40%;
-    border-radius: 50%;
+    border-radius: 10px;
+
 }
 
 .work-card img {
@@ -218,7 +219,7 @@ section{
     min-width: 200px;
     max-height: 200px;
     position: relative;
-    border-radius: 50%;
+    border-radius: 5px;
 }
 
 .card-title-box {
